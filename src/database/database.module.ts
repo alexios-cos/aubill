@@ -18,9 +18,6 @@ import { dirname } from "path";
                 const dataSource = new DataSource({
                     type: 'postgres',
                     url: configService.get<string>('database.dbUrl'),
-                    username: configService.get<string>('database.dbUrl'),
-                    password: configService.get<string>('database.dbPassword'),
-                    database: configService.get<string>('database.dbName'),
                     entities: [
                         __dirname + '/../**/entity/*{.ts,.js}',
                     ],
