@@ -11,7 +11,7 @@ async function bootstrapSwagger(app: INestApplication) {
         .setTitle('Aubill API')
         .setDescription('Aubill API list of endpoints')
         .setVersion('1.0.0')
-        .addServer('http://localhost:3000/api/v1')
+        .addServer('http://localhost:3000')
         .addCookieAuth(
             'Authentication',
             {

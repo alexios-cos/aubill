@@ -1,12 +1,12 @@
 FROM node:20-alpine
 
+RUN npm i -g @nestjs/cli
+
 WORKDIR /app
 
 COPY package*.json ./
 
 RUN chown -R node:node /app
-
-USER node
 
 RUN npm install
 
